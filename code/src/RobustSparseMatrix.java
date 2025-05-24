@@ -37,7 +37,7 @@ public class RobustSparseMatrix {
     
     private void loadFromFile(String filePath) {
         try {
-            // First pass: determine actual dimensions
+            // First pass: determining actual dimensions
             int actualRows = 0, actualCols = 0;
             int declaredRows = 0, declaredCols = 0;
             
@@ -77,7 +77,7 @@ public class RobustSparseMatrix {
             System.out.println("(Declared: " + declaredRows + "x" + declaredCols + 
                              ", Actual: " + actualRows + "x" + actualCols + ")");
             
-            // Second pass: load the data
+            // Second pass: loading the data
             BufferedReader secondPass = new BufferedReader(new FileReader(filePath));
             lineCount = 0;
             
