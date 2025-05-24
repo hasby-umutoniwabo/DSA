@@ -45,11 +45,11 @@ public class MatrixMain {
             System.out.print("Enter path for second matrix file: ");
             String file2 = scanner.nextLine().trim();
             
-            // Try to find the files
+            // Trying to find the files
             file1 = findFile(file1);
             file2 = findFile(file2);
             
-            // Perform operation
+            // Performing operation
             performOperation(operation, file1, file2);
             
             System.out.println("\n" + "=".repeat(50));
@@ -85,7 +85,7 @@ public class MatrixMain {
     }
     
     private static String findFile(String filename) {
-        // Try original path first
+        // Trying the original path first
         File file = new File(filename);
         if (file.exists()) {
             return filename;
