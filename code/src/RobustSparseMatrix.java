@@ -1,10 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * Robust Sparse Matrix Implementation that handles real-world data files
- * Automatically adjusts dimensions based on actual data
- */
+/** Robust Sparse Matrix Implementation*/
 public class RobustSparseMatrix {
     private int rows;
     private int cols;
